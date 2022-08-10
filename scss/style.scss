@@ -26,6 +26,13 @@ a {
     line-height: 19px;
 }
 
+.title {
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+
+
 .header {
     padding: 20px 0 40px;
     .header-top {
@@ -86,6 +93,113 @@ a {
         line-height: 43px;
         color: #FFFFFF;
         max-width: 480px;
-        left: 300px;
+        left: 250px;
     }
 }
+
+.submit__write {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 150px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 110px;
+        height: 112px;
+        background-image: url(../images/header/btnEllipse.svg);
+        background-repeat: no-repeat;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-45%);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 156px;
+        height: 17px;
+        background-image: url(../images/header/btnArrow.svg);
+        background-repeat: no-repeat;
+        bottom: -8px;
+        left: -15px;
+    }
+}
+
+.about {
+    margin-top: 120px;
+    &__title {
+        margin-bottom: 94px;
+        span {
+            color: #9C2E29;
+            font-weight: 700;
+            max-width: 955px;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__item {
+        max-width: 215px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #A6A6A6;
+        p {
+            margin-top: 13px;
+        }
+    }
+}
+
+.products {
+    margin-top: 120px;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        letter-spacing: 0.03em;
+        color: #9C2E29;
+        max-width: 1060px;
+        margin-bottom: 45px;
+    }
+    &__item {
+        max-width: 370px;
+        position: relative;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        margin-bottom: 20px;
+        border: 2px solid transparent;
+        transition: all .3s;
+        img {
+            max-width: 100%;
+        }
+        &:hover {
+            border-color: #9C2E29;
+        }
+        &-text {
+            background-color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            line-height: 23px;
+            padding: 20px 10px;
+            position: absolute;
+            bottom: 0;
+            width: 102%;
+            left: 0;
+        }
+    }
+}
+
