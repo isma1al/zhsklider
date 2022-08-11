@@ -19,3 +19,15 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+const dropLink = document.querySelector('.dropdown__item-list');
+const dropdown = document.querySelector('.menu__block-dropdown');
+
+dropLink.addEventListener('mouseover', () =>{
+  dropdown.classList.add('dropdown--active')
+})
+
+dropLink.addEventListener('mouseout', () =>{
+    dropdown.classList.remove('dropdown--active')
+})
+
