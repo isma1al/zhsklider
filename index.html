@@ -13,7 +13,39 @@
 </head>
 <body>
     <header class="header">
+        <div class="header-top__contacts top--contacts">
+            <span>Москва</span>
+            <a href="tel:+74993509760" class="header-top__phone">+7 (499) 350-97-60</a>
+         </div>
+         <div class="header__mobile-menu ">
+            <span class="close">
+                <img src="images/close.svg" alt="close">
+            </span>
+            <ul class="mobile__list">
+                <li class="mobile__list-item">
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="mobile__list-item">
+                    <a href="products.html">
+                        Услуги
+                    </a>
+                </li>
+                <li class="mobile__list-item">
+                    <a href="about.html">
+                        О компании
+                    </a>
+                </li>
+                <li class="mobile__list-item">
+                    <a href="contacts.html">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="container">
+            
             <div class="header-top">
                  <a href="#" class="header-top__logo"><img src="images/logo.png" width="175"  height="95" alt="logo"></a>
                  <nav class="menu">
@@ -74,11 +106,14 @@
                     <span>Москва</span>
                     <a href="tel:+74993509760" class="header-top__phone">+7 (499) 350-97-60</a>
                  </div>
+                 <span class="burger__btn">
+                    <img src="images/burger.svg" alt="">
+                 </span>
             </div>
             
         </div>
     </header>
-    <section class="home">
+   <section class="home">
         <div class="container"> 
             <div class="title__block">
                 <div class="red__ribbon">
@@ -92,6 +127,7 @@
                 
                 <button class="submit__write">Оставить заявку</button>
         </div>
+         
     </section>
     <section class="about">
         <div class="container">
@@ -176,7 +212,7 @@
                     </div>
                 </a>
                 <a href="alpen.html">
-                    <div class="products__item">
+                    <div class="products__item products__item-apl">
                         <img src="images/products/item7.png" alt="workImg">
                         <div class="products__item-text">Услуги промышленных альпинистов</div>
                     </div>
@@ -193,6 +229,7 @@
             </div>
         </div>
     </section>
+    
     <section class="slider">
         <div class="container">
             <div class="slider__inner">
@@ -329,7 +366,7 @@
             </div>
         </div>
         
-    </footer>
+    </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>

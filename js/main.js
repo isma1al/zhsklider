@@ -31,3 +31,13 @@ dropLink.addEventListener('mouseout', () =>{
     dropdown.classList.remove('dropdown--active')
 })
 
+const burgerBtn = document.querySelector('.burger__btn');
+const mobileMenu = document.querySelector('.header__mobile-menu');
+const closeBtn = document.querySelector('.close');
+
+burgerBtn.addEventListener('click', () =>{
+  mobileMenu.classList.add('header__mobile-menu--active');
+})
+closeBtn.addEventListener('click', () =>{
+  mobileMenu.classList.remove('header__mobile-menu--active');
+})
