@@ -1,3 +1,37 @@
+
+
+window.onload = function() {
+  $(function() {
+    $('.licenses__inner').slick({
+      infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 300,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          
+        },
+      },
+      {
+        breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+    })
+  })
+};
+
+console.log(1);
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
@@ -40,4 +74,16 @@ burgerBtn.addEventListener('click', () =>{
 })
 closeBtn.addEventListener('click', () =>{
   mobileMenu.classList.remove('header__mobile-menu--active');
+})
+
+
+const modal = document.querySelector('.modal');
+const closemenuBtn = document.querySelector('.close__menu');
+const modalBtn = document.querySelector('.post__documentation');
+
+modalBtn.addEventListener('click', () =>{
+  modal.classList.add('modal--active');
+})
+closemenuBtn.addEventListener('click', () =>{
+  modal.classList.remove('modal--active');
 })

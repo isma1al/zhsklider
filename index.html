@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖСК Лидер</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="css/style.min.css">
+    
 </head>
 <body>
+    <div class="modal">
+        <div class="container">
+            <div class="modal__inner">
+                <span class="close__menu"><img width="30" height="30" src="images/close-menu.svg" alt="close"></span>
+                <h2 class="title modal__title">Приложить документацию</h2>
+           <form action="#">
+            <input name="user_name" placeholder="Имя" type="text" class="form__name">
+            <input name="user_phone" placeholder="Телефон" type="tel" class="form__tel">
+            <input name="user_city" placeholder="Город" type="text" class="form__city">
+            <input name="user_message" placeholder="Ваше сообщение" type="text" class="form__message">
+            <div class="file__block">
+                <input name="user_file" id="file"  placeholder="Прикрепить файл" class="form__file" type="file">
+                <label class="file__label" for="file"> <img src="images/form/plus.svg" alt=""> <span>Прикрепить файл</span></label>
+            </div>
+            <p class="form__warning">
+                <span>Внимание!</span> Все поля обязательны для заполнения.
+Отправляя форму, вы соглашаетесь с <a href="#">Политикой обработки данных</a>
+
+            </p>
+            <button type="submit" class="form__btn">Отправить заявку</button>
+           </form>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header-top__contacts top--contacts">
             <span>Москва</span>
@@ -47,7 +79,7 @@
         <div class="container">
             
             <div class="header-top">
-                 <a href="#" class="header-top__logo"><img src="images/logo.png" width="175"  height="95" alt="logo"></a>
+                 <a href="index.html" class="header-top__logo"><img src="images/logo.png" width="175"  height="70" alt="logo"></a>
                  <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
@@ -229,29 +261,54 @@
             </div>
         </div>
     </section>
+
+    <section class="licenses">
+        <div class="container">
+            <h2 class="title licenses__title"><span>ЖСК Лидер</span> является членом саморегулируемой организацией </h2>
+            <div class="lic__content">
+                <p class="licenses__text">
+                
+                    Регистрационный номер в государственном реестре саморегулируемых организаций:
+                   <span>СРО-С-113-15122009</span>
+               </p>
+               <a href="register-number.html" target="_blank" class="down__pdf">Посмотреть PDF</a>
+            </div>
+            <div class="recomend">
+                <h3 class="title" >Нас рекомендуют</h3>
+            <div class="licenses__inner">
+                <div class="licenses__item">
+                    <img src="images/licenses/item5.jpg" alt="item">
+                </div>
+                <div class="licenses__item">
+                    <img src="images/licenses/item2.jpg" alt="item">
+                </div>
+                <div class="licenses__item">
+                    <img src="images/licenses/item3.jpg" alt="item">
+                </div>
+                <div class="licenses__item">
+                    <img src="images/licenses/item1.jpg" alt="item">
+                </div>
+                <div class="licenses__item">
+                    <img src="images/licenses/item4.jpg" alt="item">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
     
     <section class="slider">
         <div class="container">
-            <div class="slider__inner">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/slider/sliderImg.png" alt="sliderImg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/slider/sliderImg.png" alt="sliderImg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/slider/sliderImg.png" alt="sliderImg">
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-                </div>
-                <div class="slider__content">
-                    <h2>Многоквартирные <span>жилые дома</span></h2>
-                    <p>К общему имуществу дома относят помещения общего пользования всеми владельцами квартир. На основании договора, который заключается со всеми жильцами, дом обслуживается организацией или частным предпринимателем. В обязанности его входит обеспечение ремонтов, уборки придомовой территории.</p>
-                </div>
+
+        <div class="slider__home-inner">
+            <div class="slider__img">
+                <img src="images/slider/sliderImg.png" alt="sliderImg">
+            </div>
+
+    <div class="slider__content">
+        <h2>Многоквартирные <span>жилые дома</span></h2>
+        <p>К общему имуществу дома относят помещения общего пользования всеми владельцами квартир. На основании договора, который заключается со всеми жильцами, дом обслуживается организацией или частным предпринимателем. В обязанности его входит обеспечение ремонтов, уборки придомовой территории.</p>
+    </div>
+        </div>  
             </div>
         </div>
     </section>
@@ -291,7 +348,7 @@
     </section>
     <section class="quote">
         <div class="container">
-            <h2 class="quote__title">Мы готовы рассказать всё <span>о себе</span></h2>
+            <a href="about.html" class="quote__title">Мы готовы рассказать всё <span>о себе</span></a>
         </div> 
     </section>
     <div class="treaty">
@@ -301,17 +358,17 @@
                     <p class="treaty__inner-text">Если у вас есть техническое задание, мы можем сразу сделать просчет по стоимости и назвать примерные сроки!</p>
                     <div class="treaty__inner-content">
                         <p>ЖСК Лидер воплотит в жизнь ваши задачи. Для вашего удоства вы можете сразу приложить имеющуюся документацию </p>
-                        <button>Приложить документацию</button>
+                        <button class="post__documentation">Приложить документацию</button>
                     </div>
                 </div>
          
         </div>
     </div>
 
-    <section class="form__section">
+    <section class="form__section form__home">
         <div class="container">
             <h2 class="title form__title">Заказать звонок</h2>
-            <form class="form" action="mail.php" method="POST">
+            <form class="form " action="send-contact.php" method="POST">
                 <input name="user_name" placeholder="Имя" type="text" class="form__name">
                 <input name="user_phone" placeholder="Телефон" type="tel" class="form__tel">
                 <input name="user_city" placeholder="Город" type="text" class="form__city">
@@ -348,10 +405,10 @@
                         <li class="footer__list-item"><a href="#">Контакты</a></li>
                     </ul>
                     <ul class="social__links">
-                        <li><a href="#" class="telegram__link"><img src="images/footer/telegram.png" alt="telegram"></a></li>
-                        <li><a href="#" class="whats__link"><img src="images/footer/whats.png" alt="whats"></a></li>
-                        <li><a href="#" class="email__link"><img src="images/footer/email.png" alt="email"></a></li>
-                        <li><a href="#" class="viber__link"><img src="images/footer/viber.png" alt="viber"></a></li>
+                        <li><a href="#" class="telegram__link"><img width="30" height="30" src="images/telega.svg" alt="telegram"></a></li>
+                        <li><a href="#" class="whats__link"><img width="30" height="30" src="images/whats.svg" alt="whats"></a></li>
+                        <li><a href="#" class="email__link"><img width="30" height="30" src="images/mail.svg" alt="email"></a></li>
+                        <li><a href="#" class="viber__link"><img width="30" height="30" src="images/viber.svg" alt="viber"></a></li>
                     </ul>
                 </div>
                 <div class="time__working">
@@ -361,14 +418,15 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <a href="#" class="header-top__logo"><img src="images/logo.png" width="175"  height="95" alt="logo"></a>
+                <a href="index.html" class="header-top__logo"><img src="images/logo.png" width="175"  height="70" alt="logo"></a>
                 <p class="footer__bottom-text">© ЖСК ЛИДЕР, 2022. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя. Сайт не является публичной офертой. Условия и стоимость предложения могут быть скорректированы. Ознакомиться с актуальными условиями можно на сайте или по телефону.</p>
             </div>
         </div>
         
     </footer> 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
